@@ -5,7 +5,7 @@ const Register = () => {
 
     const onSubmit = async (data: RegisterFormProps) => {
         try {
-            const fetching = await fetch('http://localhost:8000/auth/register', {
+            const fetching = await fetch('https://backend-project-production-e181.up.railway.app/auth/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -17,7 +17,7 @@ const CategoryNew = () => {
             "isDone": values.isDone  
         }
         try {
-            const fetching = await fetch('http://localhost:8000/books', {
+            const fetching = await fetch('https://backend-project-production-e181.up.railway.app/books', {
                 method: 'POST',
                 headers: { 
                     'Content-Type': 'application/json',

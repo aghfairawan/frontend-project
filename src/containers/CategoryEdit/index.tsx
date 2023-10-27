@@ -23,7 +23,7 @@ const CategoryEdit = () => {
 
     const getCategory = useCallback(
         async () => {
-            const fetching = await fetch(`http://localhost:8000/books/${id}`, {
+            const fetching = await fetch(`https://backend-project-production-e181.up.railway.app/books/${id}`, {
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': `Bearer ${token}`
@@ -54,7 +54,7 @@ const CategoryEdit = () => {
             "isDone": values.isDone 
         }
         try {
-            const fetching = await fetch(`http://localhost:8000/books/${id}`, {
+            const fetching = await fetch(`https://backend-project-production-e181.up.railway.app/books/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

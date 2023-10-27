@@ -6,7 +6,7 @@ const Login = () => {
     const token = localStorage.getItem('token');
 
     const onSubmit = async (data: LoginFormProps) => {
-        const fetching = await fetch('http://localhost:8000/auth/login', {
+        const fetching = await fetch('https://backend-project-production-e181.up.railway.app/auth/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

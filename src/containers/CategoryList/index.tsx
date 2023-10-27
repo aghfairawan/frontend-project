@@ -22,7 +22,7 @@ const CategoryList = () => {
         () => {
             const token = localStorage.getItem('token');
             const getCategoryList = async () => {
-                const fetching = await fetch('http://localhost:8000/books', {
+                const fetching = await fetch('https://backend-project-production-e181.up.railway.app/books', {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
@@ -38,7 +38,7 @@ const CategoryList = () => {
     const removeCategory = async (_id: string) => {
         try {
             const token = localStorage.getItem('token');
-            const fetching = await fetch(`http://localhost:8000/books/${_id}`, {
+            const fetching = await fetch(`https://backend-project-production-e181.up.railway.app/books/${_id}`, {
                 method: 'DELETE',
                 headers: {
                     'Authorization': `Bearer ${token}`,
